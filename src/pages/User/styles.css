@@ -1,0 +1,170 @@
+header{
+    background-color: #24272F;
+    display: flex;
+    height: 89px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.backIcon{
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+.central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.user{
+    text-align: center;
+    background-color: #24272F;
+    width: 342px;
+    border-radius: 20px;
+    padding: 2rem 0;
+    position: relative;
+    animation: moveUser 700ms ease-in;
+}
+
+.name, .date, .description{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    margin: 1rem auto;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.name, .date{
+    width: 50%;
+}
+
+.description{
+    width: 80%;
+    text-align: justify;
+    line-height: 1.2;
+}
+.repos{
+    align-self: flex-start;
+    flex: 0.7;
+    display: flex;
+    gap: 19px;
+    height: 44px;
+    margin-top: 1rem;
+    position: relative;
+    animation: moveRepos 700ms ease-in;
+    flex-wrap: wrap;
+}
+
+.btn-search{
+    color: #ffffff;
+    border: none;
+    background-color: #000AFF;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+.qtde{
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+}
+
+#quant{
+    height: 100%;
+    width: 50px;
+    outline: none;
+}
+
+.repos-search{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.repo{
+    height: 100%;
+    max-width: 288px;
+    outline: none;
+    padding: 10px;
+}
+
+.btn-search{
+    height: 100%;
+    width: 147px;
+}
+.profileImg{
+    width: 189px;
+    height: 194px;
+    border-radius: 50%;
+}
+
+.repos-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.invalid-user{
+    background-color: red;
+    color: #ffffff;
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    padding-top: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.user-git{
+    color: blue;
+    font-weight: bold;
+}
+
+.date, .name, .bottom-infos, .location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.redirect-git{
+    text-decoration: none;
+}
+@keyframes moveUser{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes moveRepos{
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 0;
+    }
+}

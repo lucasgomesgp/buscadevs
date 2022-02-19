@@ -32,7 +32,7 @@ export function Home() {
     <main className="content">
       <section className="searchArea">
         <h1 className="title">BuscaDev</h1>
-        <img src="assets/github.svg" alt="Github" className="github" />
+        <img src="./assets/github.svg" alt="Github" className="github" />
         <form onSubmit={handleSubmit}>
           {isInvalid ? <p className="invalid-user">Usuário inválido</p> : ""}
           <input
@@ -49,7 +49,7 @@ export function Home() {
       </section>
       <section className="wallpaper">
         <h3 className="centralSubText">Busque mais sobre o seu Dev favorito</h3>
-        <img src="assets/devs.png" alt="Desenvolvedores" className="devsImg" />
+        <img src="./assets/devs.png" alt="Desenvolvedores" className="devsImg" />
       </section>
     </main>
   );

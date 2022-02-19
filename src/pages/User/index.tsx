@@ -47,7 +47,7 @@ export function User() {
           onClick={handleBack}
         />
         <div className="central" onClick={handleBack}>
-          <img src="assets/github-sm.svg" alt="Github" className="githubImg" />
+          <img src="./assets/github-sm.svg" alt="Github" className="githubImg" />
           <h2 className="subTitle">BuscaDev</h2>
         </div>
       </header>
